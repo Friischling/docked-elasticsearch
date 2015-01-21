@@ -8,7 +8,6 @@
 FROM dockerfile/elasticsearch
 
 # Install ElasticSearch.
-RUN \
-  /elasticsearch/bin/plugin -install mobz/elasticsearch-head \
-  /elasticsearch/bin/plugin -install lukas-vlcek/bigdesk \
-  /elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ
+RUN /elasticsearch/bin/plugin -install mobz/elasticsearch-head
+RUN /elasticsearch/bin/plugin -install lukas-vlcek/bigdesk \
+RUN /elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ
